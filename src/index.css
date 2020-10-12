@@ -1,16 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     padding: 0;
+    background-color: #fce4ec;
 }
 
 
 .hero {
     margin-top: 0;
     padding-top: 0;
-    background: url('../static/img/herocake.jpeg');
+    background-image: url('../static/img/herocake.jpeg');
+    background-color: #cccccc;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
+    background-size: cover;
     height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-title {
+    font-family: 'Berkshire Swash', 'Roboto';
+}
+
+.hero .hero-title {
+    color: #e8c8d2;
+    font-size: 10rem;
+    display: inline;
+    font-family: 'Berkshire Swash', Arial;
 }

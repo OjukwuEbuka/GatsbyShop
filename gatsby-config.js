@@ -9,6 +9,8 @@ const keys = require('./keys');
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-shopify`,
       options: {

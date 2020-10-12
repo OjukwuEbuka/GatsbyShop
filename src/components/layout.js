@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
     },
+    aBar: {
+        backgroundColor: pink[500],
+    }
 }))
 
 const Layout = (props) => {
@@ -28,12 +31,12 @@ const Layout = (props) => {
 
     return (
         <>
-            <AppBar position="static" >
+            <AppBar className={`${classes.aBar}`} position="static" >
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography variant="h6" className={`head-title ${classes.title}`}>
                         Cake Plaza
                     </Typography>
                     <Button color="inherit">Login</Button>
